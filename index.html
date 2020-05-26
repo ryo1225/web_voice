@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang ="ja">
+
+	<head>
+		<meta charset= "UTF-8">
+		<title>音声認識システム</title>
+	</head>
+
+	<body>
+		<h2>音声認識システム</h2>
+		<button id ="btn">start</button>
+		<div id = "content"></div>
+
+	<script>
+
+		const speech = new webkitSpeechRecognition();
+		speech.lang = 'ja-JP'
+
+		const btn = document.getElementById('btn');
+		const content = document.getElementById('content');
+
+		btn.addEventListener('click' , function()  {
+			speech.start();
+		})
+
+		speech.addEventListener('result' , function(e) {
+			console.log(e);
+
+		const text = e.results[0][0].transcript;
+		content.innerText = text;
+		
+		})
+
+
+
+	</script>
+
+
+	</body>
+</html>
