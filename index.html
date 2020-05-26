@@ -23,14 +23,27 @@
 			speech.start();
 		})
 
-		speech.addEventListener('result' , function(e) {
-			console.log(e);
+		// speech.addEventListener('result' , function(e) {
+		//	console.log(e);
 
-		const text = e.results[0][0].transcript;
-		content.innerText = text;
-		
-		})
+		//const text = e.results[0][0].transcript;
+		//content.innerText = text;
 
+		//})
+
+		speech.onresult = function(e) {
+			speech.stop();
+			if(e.results[0].isFinal) {
+				var autotext = e.results[0][0].transcript
+				console.log(e);
+				console.log(autotext);
+				content.innerHTML += '<div>' + autotext + '<div>';
+			}
+		}
+
+		speech.onend = () => {
+			speech.start()
+		};
 
 
 	</script>
