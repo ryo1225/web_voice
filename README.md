@@ -1,4 +1,4 @@
-# web_voice
+# README
 
 ### アプリケーションの概要
 アプリ名 <b>web_voice</b>
@@ -6,12 +6,12 @@
 
 
 ## アプリケーションの機能
-・Firebaseを使ったリアルタイムチャット
+・<b>Firebase</b>を使ったリアルタイムチャット
 
-・WebRTC(SkyWayAPI)を使ったビデオ会議
+・<b>WebRTC(SkyWayAPI)</b>を使ったビデオ会議
 
-・Web speech APIを使った音声認識、自動文字起こし
+・<b>Web speech API</b>を使った音声認識、自動文字起こし
 
 ・上記アプリを組み合わせたWeb会議システム
 
-・Firebase Hostingを使用してWebアプリをデプロイ
+・<b>Firebase Hosting</b>を使用してWebアプリをデプロイ
