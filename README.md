@@ -9,7 +9,7 @@
 # アプリケーションの機能
 ・**Firebase**を使ったリアルタイムチャット
 
-・**WebRTC(SkyWayAPI)**を使ったビデオ会議
+・**WebRTC（SkyWayAPI）**を使ったビデオ会議
 
 ・**Web speech API**を使った音声認識、自動文字起こし
 
