@@ -11,7 +11,7 @@
 
 ・**WebRTC(SkyWayAPI)**を使ったビデオ会議
 
-・**Web speech APIを使った音声認識、自動文字起こし
+・**Web speech API**を使った音声認識、自動文字起こし
 
 ・上記アプリを組み合わせたWeb会議システム
 
